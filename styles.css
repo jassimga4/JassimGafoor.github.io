@@ -17,11 +17,32 @@
 .Page
 {
 	font-size: 2em;
+	height: 100%;
+	width: 100%;
+	text-align: center;
 
 }
 
-#About{
+.Link{
+	position: relative;
+	font-size: 3em;
+	width: 80%;
+	padding: 2px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	border-style: solid;
+	border-width: 10px;
+	border-color: #FAFAFFFA;
+	background-color: #FAFAFFFA;
+	mix-blend-mode: screen;
+}
 
+#About{
+	background-color: #FFE527;
+}
+
+#Contact{
+	background-color: #38C249;
 }
 
 #Title
@@ -35,7 +56,7 @@
 	font-size: 4.5em;
 	left: 50%;
 	top: 50%;
-	max-height: 175px;
+	max-height: 18%;
 	width: 60%;
 	margin: -10% 0 0 -30%;
 	overflow:hidden;
@@ -65,4 +86,22 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font-family: Verdana, Serif;
+	text-decoration: none;
+	list-style: none;
+
+}
+
+a:link{
+	color: #000000FF;
+}
+
+a:visited{
+	color: #000000FF;
+}
+
+a:hover{
+	color: #2D4446;
+}
+a:active{
+	color: #FDFDFD;
 }
