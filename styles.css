@@ -61,6 +61,7 @@
 	width: 60%;
 	margin: -10% 0 0 -30%;
 	overflow:hidden;
+	letter-spacing: 0.1em;
 }
 
 html, body 
@@ -86,10 +87,9 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font-family: Verdana, Serif;
+	font-family: Montserrat, sans-serif;
 	text-decoration: none;
 	list-style: none;
-
 }
 
 a:link{
