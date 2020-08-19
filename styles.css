@@ -1,10 +1,9 @@
 .Cover
 {
-	background: #2D4446 url("Cover.jpg") no-repeat center top;
+	background: #2D4446;
 	background-size: contain;
 	text-align: center;
 	height: 100%;
-	width: 100%;
 }
 
 .Content
@@ -15,31 +14,41 @@
 	width: 100%;
 }
 
+
+
 .Page
 {
 	font-size: 2em;
 	height: 100%;
 	width: 100%;
+	padding-top: 20%;
 	text-align: center;
 
 }
 
+.Panel{
+	width: 60%;
+	vertical-align: center;
+	margin: auto;
+	background: #000000;
+}
+
+
 .Link{
 	position: relative;
 	font-size: 3em;
-	width: 80%;
+	width: 100%;
 	padding: 2px;
 	margin: 0 auto;
 	margin-bottom: 10px;
-	border-style: solid;
-	border-width: 10px;
-	border-color: #FAFAFFFA;
-	background-color: #FAFAFFFA;
-	mix-blend-mode: screen;
+	background-color: #00000000;
+	mix-blend-mode: normal;
+
 }
 
 #About{
-	background-color: #FFE527;
+	background: #FFF5F7 ;
+	background-size: contain;
 }
 
 #Contact{
@@ -49,10 +58,7 @@
 #Title
 {	
 	position: absolute;
-	border-style: solid;
-	border-width: 10px;
-	border-color: #FF22F7;
-	color: #FF22F7;
+	color: #FFF5F700;
 	text-align: center;
 	font-size: 4.5em;
 	left: 50%;
@@ -60,14 +66,29 @@
 	max-height: 18%;
 	width: 60%;
 	margin: -10% 0 0 -30%;
-	overflow:hidden;
 	letter-spacing: 0.1em;
+	font-family: Montserrat, sans-serif;
+  animation-name: example;
+  animation-duration: 3s;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+
 }
+
+@keyframes example {
+  0%   {color: #FFF5F7}
+  25%  {color: grey}
+  50%  {color: #AFAFAF}
+  100% {color: #FFF5F700}
+}
+
 
 html, body 
 {
 	height: 100%;
 	width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -87,22 +108,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font-family: Montserrat, sans-serif;
 	text-decoration: none;
 	list-style: none;
 }
 
-a:link{
-	color: #000000FF;
-}
-
-a:visited{
-	color: #000000FF;
-}
-
-a:hover{
-	color: #2D4446;
-}
-a:active{
-	color: #FDFDFD;
-}
