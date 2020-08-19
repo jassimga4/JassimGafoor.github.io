@@ -3,7 +3,7 @@
 	background: #2D4446;
 	background-size: contain;
 	text-align: center;
-	height: 100%;
+	height: 120%;
 }
 
 .Content
@@ -21,9 +21,9 @@
 	font-size: 2em;
 	height: 100%;
 	width: 100%;
-	padding-top: 20%;
+	padding-top: 5%;
 	text-align: center;
-
+	font-family: Montserrat, sans-serif
 }
 
 .Panel{
@@ -35,14 +35,19 @@
 
 
 .Link{
-	position: relative;
-	font-size: 3em;
-	width: 100%;
+	position: sticky;
+	display: block;
+	font-size: 2em;
+	width: 50%;
 	padding: 2px;
 	margin: 0 auto;
 	margin-bottom: 10px;
 	background-color: #00000000;
 	mix-blend-mode: normal;
+}
+
+.Link:hover {
+	background-color: #F0F0F0;
 
 }
 
@@ -57,31 +62,29 @@
 
 #Title
 {	
-	position: absolute;
-	color: #FFF5F700;
+	position: -webkit-sticky;
+ 	position: sticky;
+	color: #FFF5F7;
 	text-align: center;
 	font-size: 4.5em;
 	left: 50%;
 	top: 50%;
-	max-height: 18%;
 	width: 60%;
-	margin: -10% 0 0 -30%;
+	padding-left: 10%;
 	letter-spacing: 0.1em;
 	font-family: Montserrat, sans-serif;
   animation-name: example;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-iteration-count: 3;
   animation-direction: alternate;
-
 }
 
 @keyframes example {
-  0%   {color: #FFF5F7}
+  0%   {color: #FFF5F700}
   25%  {color: grey}
   50%  {color: #AFAFAF}
-  100% {color: #FFF5F700}
+  100% {color: #FFF5F7}
 }
-
 
 html, body 
 {
@@ -112,3 +115,6 @@ time, mark, audio, video {
 	list-style: none;
 }
 
+a {
+    color: inherit;c
+}
