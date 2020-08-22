@@ -1,3 +1,18 @@
+/*
+
+TO_DOS
+
+scroll down icon clickable and scrolls to next page.
+
+to know more has to be animated to dissapear by scrolling to bottom.
+
+maybe play around a bit with logo hide as scroll through website.
+
+*/
+
+
+
+
 .Cover
 {
 	background: #2D4446;
@@ -22,7 +37,7 @@
 }
 
 #menubar{
-	z-index: 2;
+	z-index: 3;
 	width: 100px;
 	margin: 50px;
 	position: fixed;
@@ -33,8 +48,7 @@
 	border: 1px red;
 	padding-bottom: 25px;
 	padding-top: 25px;
-	transition: 0.3s;
-	
+	transition: 0.3s;	
 }
 
 /*
@@ -59,11 +73,11 @@
 	text-align: center;
 	font-family: Montserrat, sans-serif;
 	background: #FDFDFD;
-	z-index: 1;
+	z-index: 2;
 }
 
 #arrows{
-    z-index: 3;
+    z-index: 1;
     /**/
     display: block;
     position: fixed;
@@ -84,7 +98,7 @@
     animation-name: glow;
     animation-duration: 2s;
     animation-iteration-count: 4;
-    animation-delay: 4s;
+    animation-delay: 6s;
  }
 
 @keyframes glow {
