@@ -62,6 +62,51 @@
 	z-index: 1;
 }
 
+#arrows{
+    z-index: 3;
+    /**/
+    display: block;
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    /**/
+    background-color: #FFFFFF00;
+    width: 30px;
+    height: 30px;
+    border-bottom: #FDFDFD10 10px solid;
+    border-right: #FDFDFD10 10px solid;
+
+    box-shadow: 10px 10px #FDFDFD00;
+
+    transform: translate(-50%,-50%);
+    transform: rotate(45deg);
+
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: 4;
+    animation-delay: 4s;
+ }
+
+@keyframes glow {
+  0% {
+  	border-bottom: #FDFDFD10 10px solid;
+  	border-right: #FDFDFD10 10px solid;
+    
+    box-shadow: 10px 10px #FDFDFD00;
+  }
+  50% {
+  	border-bottom: #FDFDFDA0 10px solid;
+  	border-right: #FDFDFDA0 10px solid;
+  	box-shadow: 20px 20px #FFFFFF50;
+  }
+  100% {
+  	border-bottom: #FDFDFD10 10px solid;
+  	border-right: #FDFDFD10 10px solid;
+      box-shadow: 10px 10px #FDFDFD00;
+  }
+
+}
+
 .Panel{
 	width: 60%;
 	vertical-align: center;
@@ -70,12 +115,14 @@
 }
 
 .footer{
-	position: absolute; 
-	bottom: 10px; 
+	position: absolute;
+	padding-bottom: 10px;
+	padding-top: 5px;
+	bottom: 0px; 
 	width:100%;
 	text-align: center; 
 	font-size: small;
-	background-color: #FDFDFD;
+	background-color: #CFCFCF;
 }
 
 
@@ -125,14 +172,14 @@ a{
 	font-family: Montserrat, sans-serif;
   animation-name: flicker;
   animation-duration: 2s;
-  animation-iteration-count: 5;
+  animation-iteration-count: 3;
   animation-direction: alternate;
 }
 
 @keyframes flicker {
   0%   {color: #FFF5F7A0}
   25%  {color: grey}
-  50%  {color: #AFAFAF}
+  50%  {color: #AFAFAF60}
   100% {color: #FFF5F7}
 }
 
@@ -168,3 +215,8 @@ time, mark, audio, video {
 	text-decoration: none;
 	list-style: none;
 }
+
+
+
+/* ARROWS for scrollign down copied from - Zed Dash SCSS Arrow animation - cheers bruddah zed*/ 
+
