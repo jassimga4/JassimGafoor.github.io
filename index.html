@@ -64,22 +64,7 @@
 					  <img class="mySlides w3-animate-opacity" src="Slide4.jpg" style="width:100%">
 		</div>
 		
-<script>
-var slideIndex = 0;
-carousel();
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > x.length) {slideIndex = 1}
-  x[slideIndex-1].style.display = "block";
-  setTimeout(carousel, 3000); // Change image every 2 seconds
-}
-</script>
 		
 
 	</div>
@@ -103,7 +88,22 @@ function carousel() {
 <div class="footer">
 			<footer> <small> <p>Copyright &copy; 2020, Jassim Abdul Gafoor<br></p> </small> </footer> 
 </div>	
+<script>
+var slideIndex = 0;
+carousel();
 
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
 
 </body>
 </html>
