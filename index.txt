@@ -1,8 +1,0 @@
-<!DOCTYPE html>
-<html>
-<body>
-
-<img src="795174.jpg" alt="image" width="1920" height="1080">
-
-</body>
-</html>
