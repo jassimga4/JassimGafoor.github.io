@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
 
+<style>
+.mySlides {display:none;}
+</style>
 
 <head>
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:Light&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
 	<meta name="google-site-verification" content="Cx8ccbFWbmf3oLF27Xe6zYQYwolEGfEk-cRvO3IF2jA" />
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 </head>
 
 <body>
@@ -48,11 +53,33 @@
 				University of British Columbia.<br>
 
 				Based in Vancouver.
-				<br><br>		
+				<br><br>
+				
 			</p>
 		</div>
+		<div class="w3-content w3-display-container">
+					  <img class="mySlides w3-animate-opacity" src="Slide1.jpg" style="width:100%">
+					  <img class="mySlides w3-animate-opacity" src="Slide2.jpg" style="width:60%">
+					  <img class="mySlides w3-animate-opacity" src="Slide3.jpg" style="width:60%">
+					  <img class="mySlides w3-animate-opacity" src="Slide4.jpg" style="width:100%">
+		</div>
 		
+<script>
+var slideIndex = 0;
+carousel();
 
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
 		
 
 	</div>
