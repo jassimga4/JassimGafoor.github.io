@@ -142,6 +142,11 @@ maybe play around a bit with logo hide as scroll through website.
 	font-family: Montserrat, sans-serif;
 }
 
+.mySlides {
+	display:none;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 /*contanct me links*/
 #contact{
