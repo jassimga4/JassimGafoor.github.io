@@ -16,12 +16,16 @@
 </head>
 
 <body>
-	<div id="menubar">
-			<img src = "logoboi.png" alt= "JG" class="hundred">
+	<a id="top"></a>
+	<div id="menubar" onclick="openNav()">
+		<img src = "logoboi.png" alt= "JG" class="hundred">
 			<!--li>About</li>
 			<li>Contact</li>
 			<li>Resume</li-->
 	</div>
+
+	
+
 
 	<div id="arrows">
 		
@@ -30,8 +34,9 @@
 
 	<div class="Cover">
 		<div id="Title">
-			JASSIM ABDUL GAFOOR
+			<span>JASSIM ABDUL GAFOOR</span>
 		</div>
+		
 	</div>
 
 	<!--div class="Page" id="Works">
@@ -43,41 +48,29 @@
 	<!--div class="Page" id="About">
 			
 	</div-->	
-	
-	<div class="Page" id="Home">
+
+
+	<div id="About">
+		<div id="ppic">
+			<img src="Slide2.JPG">
+		</div>
 		<div id="bio">
 			<p>
-				<br><br>
-				4th Year Integrated Engineering Student.<br> 
-
-				University of British Columbia.<br>
-
-				Based in Vancouver.
-				<br><br>
-				
+				<br>
+				4th Year Integrated Engineering Student.<br><br>
+				University of British Columbia.<br><br>
+				Based in Vancouver.				
 			</p>
 		</div>
-		<div class="w3-content w3-display-container">
-					  <img class="mySlides" src="https://jassimgafoor.github.io/Slide1.jpg" style="width:100%" alt>
-					  <img class="mySlides" src="https://jassimgafoor.github.io/Slide2.JPG" style="width:60%" alt>
-					  <img class="mySlides" src="https://jassimgafoor.github.io/Slide3.JPG" style="width:60%" alt>
-					  <img class="mySlides" src="https://jassimgafoor.github.io/Slide4.JPG" style="width:100%" alt>
-		</div>
-		
-
-		
-
 	</div>
 
-	<div class="Page" id="contact">
+	<div class="Page" id="Contact">
 		<div id="coollinks">
 
-			<div id="more"> <br><br><p> to know more <p> </div>
-				
 			<ul>
 				<br><br>
-				<li class="Link"><a href="https://www.linkedin.com/in/jassimga4">LinkedIn</a></li>
-				<li class="Link"><a href="Resume.pdf" download="JassimAbdulGafoor_Resume">Resumé</a></li>
+				<li class="Link"><a href="https://www.linkedin.com/in/jassimga4" target="_blank">LinkedIn</a></li>
+				<li class="Link"><a href="Resume.pdf" download="JassimAbdulGafoor_Resume" target="_blank">Resumé</a></li>
 				<li class="Link"><a href="mailto:jgafooruni@gmail.com">Email</a></li>
 			</ul>
 		</div>
@@ -86,25 +79,28 @@
 
 </div>
 <div class="footer">
-			<footer> <small> <p>Copyright &copy; 2020, Jassim Abdul Gafoor<br></p> </small> </footer> 
+			<footer> <small> <p>Copyright &copy; 2020 | Jassim Abdul Gafoor<br></p> </small> </footer> 
 </div>	
 
-
+<div id="navi">
+	<div href="#" class="closebtn" onclick="closeNav()">&times;</div>
+	  <div class="overlay-content">
+		<a href="#top" onclick="closeNav()">HOME</a>
+		<a href="#About" onclick="closeNav()">ABOUT</a>
+		<a href="#" onclick="closeNav()">PROJECTS</a>
+		<a href="#Contact" onclick="closeNav()">CONTACT</a>
+</div>
 </body>
 <script type="text/javascript">
-var slideIndex = 0;
-carousel();
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > x.length) {slideIndex = 1}
-  x[slideIndex-1].style.display = "block";
-  setTimeout(carousel, 3000); // Change image every 2 seconds
+
+function openNav() {
+  document.getElementById("navi").style.height = "100%";
+}
+
+function closeNav(){
+	document.getElementById("navi").style.height = "0%";
 }
 </script>
+
 </html>
