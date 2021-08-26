@@ -152,7 +152,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 #arrows{
-    z-index: 1;
+    z-index: 0;
     /**/
     display: block;
     position: fixed;
@@ -252,6 +252,8 @@ a{
 	font-family: Montserrat, sans-serif;
 	display: flex;
 	padding: 12%;
+	color: teal;
+	
 }
 
 
@@ -269,7 +271,8 @@ a{
 #bio{
 	flex-grow: 1;
 	width: 50%;
-	font-size: 3em;
+	font-size: 2em;
+	color: var(--bg-dark);
 
 }
 /*Title page and setting up website no borders thing*/
@@ -329,6 +332,3 @@ time, mark, audio, video {
 	text-decoration: none;
 	list-style: none;
 }
-
- 
-
