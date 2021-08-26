@@ -72,6 +72,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 #navi {
+	font-family: Montserrat, sans-serif;
 	height: 0%;
 	width: 100%;
 	position: fixed;
