@@ -20,7 +20,7 @@ maybe play around a bit with logo hide as scroll through website.
 }
 
 body::-webkit-scrollbar{
-	width: 0.5rem;
+	display: none;
 }
 
 body::-webkit-scrollbar-track{
@@ -29,6 +29,8 @@ body::-webkit-scrollbar-track{
 
 body::-webkit-scrollbar-thumb{
 	background: var(--bg-medium);
+	width: 1rem;
+
 }
 
 
@@ -38,7 +40,20 @@ body::-webkit-scrollbar-thumb{
 	background-size: contain;
 	text-align: center;
 	height: 120%;
-	/*background-image: url("795174.jpg");*/
+	/*background-image: url("render drawing.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;*/
+}
+
+#thevideo{
+	position: absolute;
+	min-width: 100%;
+	min-height: 100%;
+	left: 0;
+	bottom:0;
+	z-index: 0;
+	overflow: hidden;
 }
 
 .Content
@@ -150,10 +165,11 @@ body::-webkit-scrollbar-thumb{
 	text-align: center;
 	font-family: Montserrat, sans-serif;
 	background: var(--bg-light);
+	z-index: 2;
 }
 
 #arrows{
-    z-index: 0;
+    z-index: 1;
     /**/
     display: block;
     position: fixed;
@@ -215,27 +231,39 @@ body::-webkit-scrollbar-thumb{
 
 
 /*contanct me links*/
+
+#coollinks{
+	padding: 2%;
+	margin: 100px;
+}
 #contact{
 	position: relative;
-	z-index: 1;
+	z-index: 2;
 }
 
 
 .Link{
 	position: relative;
 	display: inline-block;
-	font-size: 2em;
-	width: 25%;
+	font-size: clamp(2rem, 6vw, 4rem);
+	width: auto;
 	padding: 2px;
 	margin: auto;
 	margin-bottom: 20px;
 	background-color: #00000000;
 	transition: 0.5s;
-	
+	color: var(--bg-medium);
+}
+
+.Seperator{
+	display: inline-block;
+	color: #df740c;
+	font-size: 2em;
+
 }
 
 .Link:hover {
-	background-color: #F0F0F0;
+	background-color:rgba(0, 128, 128, 0.144);
 	opacity: 1;
 }
 
@@ -257,6 +285,7 @@ a{
 	text-align: center;
 	font-family: Montserrat, sans-serif; 
 	display: inline-block;
+	z-index: 2;
 }
 
 #Projects > h1{
@@ -275,7 +304,7 @@ a{
 	font-family: Montserrat, sans-serif;
 	display: flex;
 	padding: 12%;
-	z-index: 1;
+	z-index: 2;
 }
 
 
@@ -300,9 +329,11 @@ a{
 #bio > h1{
 	color: teal;
 	font-weight: bolder;
-	font-size: 3em;
+	font-size: 3rem;
 }
 /*Title page and setting up website no borders thing*/
+
+
 
 #Title
 {	
@@ -310,7 +341,7 @@ a{
  	position: sticky;
 	color: #FFF5F7;
 	text-align: center;
-	font-size: 4.5em;
+	font-size: clamp(2rem, 5vw, 5rem);
 	display: inline-block;
 	top: 50%;
 	padding-left: 0.3em;
@@ -333,6 +364,10 @@ html, body
 	width: 100%;
     max-width: 100%;
     overflow-x: hidden;
+}
+
+body{
+	overflow-y: scroll;
 }
 
 
