@@ -273,7 +273,7 @@ a{
 	cursor: pointer;
 }
 
-/* Works*/
+/*projects*/
 
 
 #Projects{
@@ -296,7 +296,6 @@ a{
 }
 
 .portal{
-	background-color: transparent;
 	width: 450px;
 	height: auto;
 	border-style: solid;
