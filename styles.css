@@ -15,8 +15,8 @@ maybe play around a bit with logo hide as scroll through website.
 	--bg-dark: #2D4446;
 	--bg-light: #FDFDFD;
 	--bg-medium: #ff9933;
-
-
+	--bg-medium-alt: #df740c;
+	--green: teal;  
 }
 
 body::-webkit-scrollbar{
@@ -54,6 +54,7 @@ body::-webkit-scrollbar-thumb{
 	bottom:0;
 	z-index: 0;
 	overflow: hidden;
+	-webkit-overflow-scrolling: touch;
 }
 
 .Content
@@ -106,13 +107,13 @@ body::-webkit-scrollbar-thumb{
   
   /* When you mouse over the navigation links, change their color */
   #navi a:hover, #navi a:focus {
-	color: teal;
+	color: var(--green);
   }
   
   /* Position the close button (top right corner) */
   #navi .closebtn {
 	position: absolute;
-	background-image: linear-gradient(#df740c 10%, var(--bg-medium) 90%);
+	background-image: linear-gradient(var(--bg-medium-alt) 10%, var(--bg-medium) 90%);
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
@@ -125,7 +126,7 @@ body::-webkit-scrollbar-thumb{
   }
    
   #navi .closebtn:hover{
-	  background-color: teal;
+	  background-color: var(--green);
 	  background-image: none;
   }
 
@@ -134,7 +135,7 @@ body::-webkit-scrollbar-thumb{
 	width: 100px;
 	margin: 50px;
 	position: fixed;
-	background-color: teal;
+	background-color: var(--green);
 	
 	cursor: pointer;
 	/*background-image: linear-gradient(#96deda 10%, #50c9c3 90%);*/
@@ -151,7 +152,7 @@ body::-webkit-scrollbar-thumb{
 }
 */
 #menubar:hover {
-	background-image: linear-gradient(#df740c 10%, #ff9933 90%);
+	background-image: linear-gradient(var(--bg-medium-alt) 10%, var(--bg-medium) 90%);
 	/*cursor: pointer;*/
 }
 
@@ -204,7 +205,7 @@ body::-webkit-scrollbar-thumb{
   50% {
   	border-bottom: var(--bg-medium) 10px solid;
   	border-right: var(--bg-medium) 10px solid;
-  	box-shadow: 20px 20px #df740c;
+  	box-shadow: 20px 20px var(--bg-medium-alt);
   }
   100% {
   	border-bottom: var(--bg-medium) 10px solid;
@@ -223,7 +224,7 @@ body::-webkit-scrollbar-thumb{
 	width:100%;
 	text-align: center; 
 	font-size: small;
-	background-color: var(--bg-dark);
+	background-color: var(--bg-medium-alt);
 	color: #FDFDFD;
 	z-index: 1;
 	font-family: Montserrat, sans-serif;
@@ -258,7 +259,7 @@ body::-webkit-scrollbar-thumb{
 
 .Seperator{
 	display: inline-block;
-	color: #df740c;
+	color: var(--bg-medium);
 	font-size: 2em;
 
 }
@@ -277,8 +278,8 @@ a{
 
 
 #Projects{
-	background-color: teal;
-	color: var(--bg-light);
+	background-color: var(--green);
+	color: var(--bg-medium);
 	position: relative;
 	height: auto;
 	width: 100%;
@@ -292,15 +293,16 @@ a{
 
 #Projects > h1{
 	font-weight: bolder;
-	font-size: 3rem;
+	font-size: 4rem;
 }
 
 .portal{
 	width: 450px;
 	height: auto;
+	background-color: var(--bg-light);
 	border-style: solid;
 	border-width: 5px;
-	border-color: var(--bg-light);
+	border-color: var(--bg-medium);
 	display: inline-block;
 	padding: 10px;
 	margin: 10px;
@@ -308,6 +310,9 @@ a{
 
 .portal > h3 {
 	color: var(--bg-dark);
+}
+.portal > h2 {
+	color: var(--green);
 }
 
 /*ABOUT*/
@@ -342,7 +347,7 @@ a{
 }
 
 #bio > h1{
-	color: teal;
+	color: var(--green);
 	font-weight: bolder;
 	font-size: 3rem;
 }
@@ -370,7 +375,7 @@ a{
 }
 
 #Title:hover{
-	color: teal;
+	color: var(--green);
 }
 
 html, body 
