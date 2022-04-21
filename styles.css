@@ -12,11 +12,12 @@ maybe play around a bit with logo hide as scroll through website.
 :root{
 	--text-primary: #FFF5F7;
 
-	--bg-dark: #2D4446;
-	--bg-light: #FDFDFD;
-	--bg-medium: #ff9933;
-	--bg-medium-alt: #df740c;
-	--green: teal;  
+	--bg-dark: #41809c;
+	--bg-light: #F8FcFf;
+	--bg-medium: #e4e5e8;
+	--bg-medium-alt: #c3cdd7;
+	--dark-highlight: #c59a5b;
+	--light-highlight:  #1eccb6 ;
 }
 
 body::-webkit-scrollbar{
@@ -107,7 +108,7 @@ body::-webkit-scrollbar-thumb{
   
   /* When you mouse over the navigation links, change their color */
   #navi a:hover, #navi a:focus {
-	color: var(--green);
+	color: var(--light-highlight);
   }
   
   /* Position the close button (top right corner) */
@@ -126,7 +127,7 @@ body::-webkit-scrollbar-thumb{
   }
    
   #navi .closebtn:hover{
-	  background-color: var(--green);
+	  background-color: var(--bg-dark);
 	  background-image: none;
   }
 
@@ -135,7 +136,7 @@ body::-webkit-scrollbar-thumb{
 	width: 100px;
 	margin: 50px;
 	position: fixed;
-	background-color: var(--green);
+	background-color: var(--bg-light);
 	
 	cursor: pointer;
 	/*background-image: linear-gradient(#96deda 10%, #50c9c3 90%);*/
@@ -254,7 +255,7 @@ body::-webkit-scrollbar-thumb{
 	margin-bottom: 20px;
 	background-color: #00000000;
 	transition: 0.5s;
-	color: var(--bg-medium);
+	color: var(--light-highlight);
 }
 
 .Seperator{
@@ -270,7 +271,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 a{
-	color: #2D4446;
+	color: var(--bg-dark);
 	cursor: pointer;
 }
 
@@ -278,8 +279,8 @@ a{
 
 
 #Projects{
-	background-color: var(--green);
-	color: var(--bg-medium);
+	background-color: var(--bg-medium-alt);
+	color: var(--bg-dark);
 	position: relative;
 	height: auto;
 	width: 100%;
@@ -312,7 +313,7 @@ a{
 	color: var(--bg-dark);
 }
 .portal > h2 {
-	color: var(--green);
+	color: var(--dark-highlight);
 }
 
 /*ABOUT*/
@@ -347,7 +348,7 @@ a{
 }
 
 #bio > h1{
-	color: var(--green);
+	color: var(--dark-highlight);
 	font-weight: bolder;
 	font-size: 3rem;
 }
@@ -359,7 +360,7 @@ a{
 {	
 	position: -webkit-sticky;/*Safari*/
  	position: sticky;
-	color: #FFF5F7;
+	color: var(--text-primary);
 	text-align: center;
 	font-size: clamp(2rem, 5vw, 5rem);
 	display: inline-block;
@@ -375,7 +376,7 @@ a{
 }
 
 #Title:hover{
-	color: var(--green);
+	color: var(--dark-highlight);
 }
 
 html, body 
