@@ -18,6 +18,7 @@ maybe play around a bit with logo hide as scroll through website.
 	--bg-medium-alt: #c3cdd7;
 	--dark-highlight: #f79361;
 	--light-highlight:  #1eccb6 ;
+	--rising: #1e344170;
 }
 
 ::-webkit-scrollbar{
@@ -149,10 +150,40 @@ maybe play around a bit with logo hide as scroll through website.
 	font-size: 50px;
 	line-height: 50px;
 	color: var(--text-primary);
+	transition: 0.4s;
 }
 
+.social ul li a:hover{
+	text-shadow: 0 0 30px var(--light-highlight);
+	font-size: 60px;
+	line-height: 70px;
+	color: var(--light-highlight);
+}
 
+.email{
+	position: relative;
+	display: inline-block;
+}
 
+.email span{
+	font-size: 1.2rem;
+	color: var(--text-primary);
+	visibility: hidden;
+	width: 100px;
+	text-align: center;
+	padding: 5px;
+	position: absolute;
+	z-index: 1;
+	
+	top: 100%;
+	left:50%;
+	margin-left: -50%;
+	
+}
+
+.email:hover span{
+	visibility: visible;
+}
 
 .showcase.active{
 	right: 300px;
@@ -242,45 +273,36 @@ maybe play around a bit with logo hide as scroll through website.
 
 .toggle{
 	position: fixed;
-	width: 60px;
-	height: 60px;
+	width: 100px;
+	height: 100px;
 	top: 20%;
+	border-radius: 50%;
 	right: 100px;
-	background: url('menu.png');
+	background-color: var(--bg-light);
+	background-image: url('menu.png');
 	background-repeat: no-repeat;
 	background-size: 60px;
 	background-position: center;
 	cursor: pointer;
 	z-index: 1000;
-}
-
-@keyframes slide{
-	0% {background-image: url('menu1.png');}
-	30% {background-image: url('menu2.png');}
-	60% {transform: scaleX(-1);
-	}
-	75% {background-image: url('menu1.png');
-		transform: scaleX(-1);
-	}
+	transition: 1s;
 }
 
 .toggle:hover{
-	animation-name: slide;
-	animation-duration: 1s;
-	animation-delay: 0.2s;
+	mix-blend-mode: overlay;
+	background-color: var(--bg-light);
+	box-shadow: 0 0 50px var(--light-highlight);
 }
 
 .toggle.active{
-	background: url('close.png');
+	background-image: url('close.png');
 	background-repeat: no-repeat;
 	background-size: 60px;
 	background-position: center;
 	cursor: pointer;
+	background-color: var(--bg-medium);
 }
 
-.toggle.active:hover{
-	animation: none;
-}
 
 .menubar{
 	position: fixed;
@@ -301,7 +323,7 @@ maybe play around a bit with logo hide as scroll through website.
 
 .menubar ul li a{
 	text-decoration: none;
-	font-size: 40px;
+	font-size: 3em;
 	color: var(--light-highlight);
 }
 
@@ -314,6 +336,14 @@ maybe play around a bit with logo hide as scroll through website.
 @media(max-width: 797px){
 	.showcase, .showcase header{
 		padding: 40px;
+	}
+
+	.toggle{
+		top: 30px;
+	}
+
+	.showcase header h2{
+		display: none;
 	}
 
 	.text h2{
