@@ -1,53 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<head>
-
+<head> 
+	<meta charset="UTF-8">
+	<meta name="viewport" content= "width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:Light&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
 	<meta name="google-site-verification" content="Cx8ccbFWbmf3oLF27Xe6zYQYwolEGfEk-cRvO3IF2jA" />
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<title>Jassim Abdul Gafoor</title>
 </head>
 
 <body>
-	<a id="top"></a>
-	<div id="menubar" onclick="openNav()">
-		<img src = "logo.png" alt= "JG" class="hundred">
-			<!--li>About</li>
-			<li>Contact</li>
-			<li>Resume</li-->
-	</div>
-
-	
+	<div class="toggle"></div>
 
 
-	<div id="arrows">
-		
-	</div>
+	<section class="showcase">
+		<header>
+			<div class="logo"></div>
+			<h2 class="name">Jassim Abdul Gafoor</h2>
+		</header>
 
-	
-
-	<div class="Cover">
 		<video autoplay muted loop id="thevideo">
-			<source src="bgvid.mp4" type="video/mp4">
+			<source src="speed4.mp4" type="video/mp4">
 		</video>
-		<div id="Title">
-			<span>JASSIM ABDUL GAFOOR</span>
+		<div class="overlay"></div>
+		<div class="text">
+			<h2>ENGINEER. PROGRAMMER. DESIGNER.</h2>
+			<p>
+				Born in Qatar. Based in Vancouver. UBC 2021.
+			</p>
+			<div class="social">
+				<ul>
+					<li><a href="#"><i class="fa fa-github-square"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+					<li><a href="#"><i class="fa fa-spotify"></i></a></li>
+				</ul>
+		
+			</div>
 		</div>
 		
+	</section>
+	
+	<div class="menubar">
+		<ul>
+			
+			<li><a href="Resume.pdf" download="JassimAbdulGafoor_Resume" target="_blank">Resumé</a></li>
+			<!--li><a href="#">Projects</a></li>
+			<li><a href="#">Skills</a></li>-->
+			<li><a href="https://jga4.com/blog/">Blog</a></li>
+		</ul>
 	</div>
 
-	<!--div class="Page" id="Works">
+	
 
+<!--
+	<section class="content">
+	<div class="Projects">
+		<header>SELECTED PROJECTS</header>
+		<div>
+			<img src="projectfiles/unity.jpg" width= 100%>
+			<h2>Unity Game Design</h2>
+			<h3>Using Unity Engine to build a game<br> Build all assets in Blender<br> Scripts and Game-Logic in C#</h3>
+		</div>
+		<div class = "portal">
+			<img src="projectfiles/Robotics.JPG" width= 100%>
+			<h2>Robotics Olympiads</h2>
+			<h3>Winner of NRO Qatar 2012<br> 2nd Place of WRO Arabia 2012 <br> 2nd Place Botball 2014 </h3>
+		</div>
+		<div class = "portal">
+			<img src="projectfiles/tbikes.png" width= 100%>
+			<h2>UBC Design Teams</h2>
+			<h3>UBC Aerodesign - Landing Gear Subteam Member <br> 3rd Place in SAE Competition 2017 <br> UBC Thunderbikes - Founding Member & Safety Officer</h3>
+		</div>
+		<div class = "portal">
+			<img src="projectfiles/gyro.png" width= 100%>
+			<h2>Micro Electro Mechanical Gyroscope (MEMS)</h2>
+			<h3>ELEC 465 (UBC) <br> Designed a functional gyroscope and tested design using CAD to achieve sensing parameters</h3>
+		</div>
+		<div class = "portal">
+			<img src="projectfiles/3NAND.png" width = 100%>
+			<h2>Integrated Circuit Design - Cadence</h2>
+			<h3>ELEC 402/403 (UBC) <br> Modelled various circuits in Cadence and implemented in 45nm technology </h3>
+		</div>
+		<div class = "portal">
+			<img src="projectfiles/sskin.png" width =100%>
+			<h2>Ultra-wideband Body Tracking</h2>
+			<h3>IGEN 430 (UBC) Smart Skin<br> Created a full body tracking solution using UWB and EMG sensors to measure body exercise</h3>
+		</div>
+		<div class = "portal">
+			<img src="projectfiles/snowzy.png" width =100%>
+			<h2>Phone Heater Case</h2>
+			<h3>IGEN 230 (UBC) Snowzy<br> Created small heater case for phone to maintain battery performance in inclement weather</h3>
+		</div>
+		<div class = "portal">
+			<img src="projectfiles/exo.png" width=100%>
+			<h2>Lower Limb Gait Device</h2>
+			<h3>IGEN 330 (UBC) LEGMA <br> Created an exoskeletal device to demonstrate walking gait of human leg</h3>
+		</div>
+	</div>
+</section>
+	-->
+	
+	<!--
+	
 
-	</div-->
-
-
-	<!--div class="Page" id="About">
+	<div class="Page" id="About">
 			
-	</div-->	
+	</div>	
 
 
 	<div id="About">
@@ -55,12 +120,7 @@
 			<img src="Slide2.JPG">
 		</div>
 		<div id="bio">
-			<h1>ABOUT</h1>
-			<br>
-				Born in Qatar. <br> Based in Vancouver. <br>
-				Graduated with a Bachelor in Applied Science at the 
-				University of British Columbia.<br>
-				Welcome to my personal portfolio.
+			
 		</div>
 	</div>
 
@@ -124,13 +184,13 @@
 				<li class="Seperator">&#8901</li>
 				<li class="Link">jgafoor@pm.me</li>
 				<li class="Seperator">&#8901</li>
-				<!--<li class="Link"><a href="https://open.spotify.com/user/kpwncf3yox5sbuv87s5ftl7nd?si=9aeb3b9c8fcd4dbf" target="_blank">Spotify</a></li>
-				<li class="Seperator">&#8901</li>-->
+				<<li class="Link"><a href="https://open.spotify.com/user/kpwncf3yox5sbuv87s5ftl7nd?si=9aeb3b9c8fcd4dbf" target="_blank">Spotify</a></li>
+				<li class="Seperator">&#8901</li>
 				<li class="Link"><a href="https://github.com/JassimGafoor" target="_blank">github</a></li>
-				<!--<li class="Seperator">&#8901</li>-->
-				<!--li class="Link"><a href="https://www.instagram.com/jassimga4/" target="_blank">Instagram</a></li>-->
+				<<li class="Seperator">&#8901</li>
+				<li class="Link"><a href="https://www.instagram.com/jassimga4/" target="_blank">Instagram</a></li>-->
 				<!--li class="Seperator">&#8901</li>
-				<li class="Link">+1 (236) 868-4445</li>-->
+				<li class="Link">+1 (236) 868-4445</li>
 			</ul>
 		</div>
 
@@ -142,22 +202,26 @@
 <div id="navi">
 	<div href="#" class="closebtn" onclick="closeNav()">&times;</div>
 	  <div class="overlay-content">
-		<a href="#top" onclick="closeNav()">HOME</a>
 		<a href="#About" onclick="closeNav()">ABOUT</a>
 		<a href="#Projects" onclick="closeNav()">PROJECTS</a>
 		<a href="https://jga4.com/blog">BLOG</a>
 		<a href="#Contact" onclick="closeNav()">CONTACT</a>
-</div>
-</body>
+</div>-->
 <script type="text/javascript">
+	const menubarToggle = document.querySelector('.toggle')
 
-function openNav() {
-  document.getElementById("navi").style.height = "100%";
-}
+	const showcase = document.querySelector('.showcase')
 
-function closeNav(){
-	document.getElementById("navi").style.height = "0%";
-}
+
+	menubarToggle.addEventListener('click', () => {
+		menubarToggle.classList.toggle('active')
+		showcase.classList.toggle('active')
+		content.classList.toggle('active')
+	})
+	
 </script>
+
+</body>
+
 
 </html>

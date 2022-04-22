@@ -11,174 +11,49 @@ maybe play around a bit with logo hide as scroll through website.
 */
 :root{
 	--text-primary: #FFF5F7;
-
+	--dark: #312c30;
 	--bg-dark: #41809c;
 	--bg-light: #F8FcFf;
 	--bg-medium: #e4e5e8;
 	--bg-medium-alt: #c3cdd7;
-	--dark-highlight: #c59a5b;
+	--dark-highlight: #f79361;
 	--light-highlight:  #1eccb6 ;
 }
 
-body::-webkit-scrollbar{
-	display: none;
+::-webkit-scrollbar{
+	background-color: var(--bg-dark);
 }
 
-body::-webkit-scrollbar-track{
-	background: var(--bg-dark);
+::-webkit-scrollbar-track{
+	background: var(--dark);
 }
 
-body::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb{
 	background: var(--bg-medium);
-	width: 1rem;
+	width: 10px;
+}
 
+::-webkit-scrollbar-thumb:hover{
+	background: var(--light-highlight);
+	width: 10px;
 }
 
 
-.Cover
-{
-	background: #2D4446;
-	background-size: contain;
-	text-align: center;
-	height: 120%;
-	/*background-image: url("render drawing.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;*/
-}
 
-#thevideo{
-	position: absolute;
-	min-width: 100%;
-	min-height: 100%;
-	left: 0;
-	bottom:0;
-	z-index: 0;
-	overflow: hidden;
-	-webkit-overflow-scrolling: touch;
-}
 
-.Content
-{
-	background-color: var(--bg-light);
-	text-align: center;
-	height: 100%;
-	width: 100%;
-}
 
-.hundred {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50px;
-}
-
-#navi {
-	font-family: Montserrat, sans-serif;
-	height: 0%;
-	width: 100%;
-	position: fixed;
-	z-index: 4;
-	top: 0;
-	left: 0;
-	background-color: rgb(0,0,0);
-	background-color: rgba(0,0,0, 0.9);
-	overflow-x: hidden;
-	transition: 0.5s;
-  }
-
-  .overlay-content {
-	position: relative;
-	top: 10%; /* 25% from the top */
-	width: 100%; /* 100% width */
-	text-align: center; /* Centered text/links */
-	margin-left: 200px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-  }
-  
-  /* The navigation links inside the overlay */
-  #navi a {
-	padding: 8px;
-	text-decoration: none;
-	text-align: center;
-	font-size: 36px;
-	color: var(--bg-light);
-	display: block; /* Display block instead of inline */
-	transition: 0.3s; /* Transition effects on hover (color) */
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  #navi a:hover, #navi a:focus {
-	color: var(--light-highlight);
-  }
-  
-  /* Position the close button (top right corner) */
-  #navi .closebtn {
-	position: absolute;
-	background-image: linear-gradient(var(--bg-medium-alt) 10%, var(--bg-medium) 90%);
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-	margin: 50px;
-	font-size: 60px;
-	color: var(--bg-light);
-	text-align: center;
-	line-height: 100px;
-	cursor: pointer;
-  }
-   
-  #navi .closebtn:hover{
-	  background-color: var(--bg-dark);
-	  background-image: none;
-  }
-
-#menubar{
-	z-index: 3;
-	width: 100px;
-	margin: 50px;
-	position: fixed;
-	background-color: var(--bg-light);
-	
-	cursor: pointer;
-	/*background-image: linear-gradient(#96deda 10%, #50c9c3 90%);*/
-	border-radius: 50%;
-	padding-bottom: 25px;
-	padding-top: 25px;
-	transition: 0.3s;	
-}
 
 /*
-@keyframes grch{
-	0% {background-image: linear-gradient(#96deda 10%, #50c9c3 90%)}
-	100% {background-image: linear-gradient(#df740c 10%, #ff9933 90%)}
-}
-*/
-#menubar:hover {
-	background-image: linear-gradient(var(--bg-medium-alt) 10%, var(--bg-medium) 90%);
-	/*cursor: pointer;*/
-}
 
-
-.Page
-{
-	position: relative;
-	font-size: 2em;
-	height: 100%;
-	width: 100%;
-	padding-top: 5%;
-	text-align: center;
-	font-family: Montserrat, sans-serif;
-	background: var(--bg-light);
-	z-index: 2;
-}
 
 #arrows{
     z-index: 1;
-    /**/
+    
     display: block;
     position: fixed;
     bottom: 50px;
     left: 50%;
-    /**/
+    
     background-color: #FFFFFF00;
     width: 30px;
     height: 30px;
@@ -216,204 +91,248 @@ body::-webkit-scrollbar-thumb{
 
 }
 
-
-.footer{
-	position: relative;
-	height:50px;
-	padding-top: 15px;
-	bottom:0px; 
-	width:100%;
-	text-align: center; 
-	font-size: small;
-	background-color: var(--bg-medium-alt);
-	color: #FDFDFD;
-	z-index: 1;
-	font-family: Montserrat, sans-serif;
-}
-
-
-
-/*contanct me links*/
-
-#coollinks{
-	padding: 2%;
-	margin: 100px;
-}
-#contact{
-	position: relative;
-	z-index: 2;
-}
-
-
-.Link{
-	position: relative;
-	display: inline-block;
-	font-size: clamp(2rem, 6vw, 4rem);
-	width: auto;
-	padding: 2px;
-	margin: auto;
-	margin-bottom: 20px;
-	background-color: #00000000;
-	transition: 0.5s;
-	color: var(--light-highlight);
-}
-
-.Seperator{
-	display: inline-block;
-	color: var(--bg-medium);
-	font-size: 2em;
-
-}
-
-.Link:hover {
-	background-color:rgba(0, 128, 128, 0.144);
-	opacity: 1;
-}
-
-a{
-	color: var(--bg-dark);
-	cursor: pointer;
-}
-
-/*projects*/
-
-
-#Projects{
-	background-color: var(--bg-medium-alt);
-	color: var(--bg-dark);
-	position: relative;
-	height: auto;
-	width: 100%;
-	padding-top: 5%;
-	padding-bottom: 25%;
-	text-align: center;
-	font-family: Montserrat, sans-serif; 
-	display: inline-block;
-	z-index: 2;
-}
-
-#Projects > h1{
-	font-weight: bolder;
-	font-size: 4rem;
-}
-
-.portal{
-	width: 450px;
-	height: auto;
-	background-color: var(--bg-light);
-	border-style: solid;
-	border-width: 5px;
-	border-color: var(--bg-medium);
-	display: inline-block;
-	padding: 10px;
-	margin: 10px;
-}
-
-.portal > h3 {
-	color: var(--bg-dark);
-}
-.portal > h2 {
-	color: var(--dark-highlight);
-}
-
-/*ABOUT*/
-
-#About{
-	position: relative;
-	height: 100%;
-	background-color: var(--bg-light);
-	font-family: Montserrat, sans-serif;
-	display: flex;
-	padding: 12%;
-	z-index: 2;
-}
-
-
-#ppic{
-	width: 600px;
-	margin: 10px;
-}
-
-#ppic > img{
-	width : auto;
-	max-height: 600px;
-	
-}
-
-#bio{
-	flex-grow: 1;
-	width: 50%;
-	font-size: 2em;
-	color:var(--bg-dark);
-}
-
-#bio > h1{
-	color: var(--dark-highlight);
-	font-weight: bolder;
-	font-size: 3rem;
-}
-/*Title page and setting up website no borders thing*/
-
-
-
-#Title
-{	
-	position: -webkit-sticky;/*Safari*/
- 	position: sticky;
-	color: var(--text-primary);
-	text-align: center;
-	font-size: clamp(2rem, 5vw, 5rem);
-	display: inline-block;
-	top: 50%;
-	padding-left: 0.3em;
-	padding-right: 0.2em;
-	margin-bottom: 2%;
-	letter-spacing: 0.1em;
-	font-family: Montserrat, sans-serif;
-	outline-width: thick;
-	outline-style: solid;
-	transition: .3s;
-}
-
-#Title:hover{
-	color: var(--dark-highlight);
-}
-
-html, body 
-{
-	height: 100%;
-	width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-body{
-	overflow-y: scroll;
-}
-
+*/
 
 /*setup stuff and icons and animations maybe*/
 
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+*{
 	margin: 0;
 	padding: 0;
-	border: 0;
-	font-size: 100%;
-	text-decoration: none;
-	list-style: none;
+	box-sizing: border-box;
+	font-family: Montserrat, sans-serif;
+}
+
+.showcase{
+	position: absolute;
+	right: 0;
+	width: 100%;
+	min-height: 100vh;
+	padding: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: var(--bg-dark);
+	color: var(--text-primary);
+	z-index: 2;
+	transition: 0.3s;
+}
+
+.logo{
+	position: relative;
+	width: 60px;
+	height: 60px;
+	background: url('logo.png');
+	background-repeat: no-repeat;
+	background-size: 60px;
+	background-position: center;
 }
 
 
+.social{
+	position: relative;
+	z-index: 15;
+	top:50%;
+	left: 20px;
+}
+
+
+.social ul li{
+	list-style: none;
+	margin: 5px 0;
+	display: inline;
+}
+
+.social ul li a{
+	width: 50px;
+	height: 50px;
+	font-size: 50px;
+	line-height: 50px;
+	color: var(--text-primary);
+}
+
+
+
+
+.showcase.active{
+	right: 300px;
+}
+
+.showcase header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px 70px;
+	z-index: 10;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+}
+
+.content{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px 70px;
+	z-index: 11;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.content.active{
+	right: 300px;
+}
+
+.showcase video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.name{
+	text-transform: uppercase;
+	
+}
+
+.text{
+	position: absolute;
+	z-index: 8;
+}
+
+.text h2{
+	font-size: 5em;
+	font-weight: bold;
+	max-width: 250px;
+}
+
+.text h3{
+	font-size: 3em;
+
+}
+
+.text p{
+	font-size: 2em;
+	margin: 20px 0;
+	max-width: 600px;
+}
+
+.text a{
+	display: inline-block;
+	font-size: 1em;
+
+}
+
+
+.overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #9b5995;
+	mix-blend-mode: overlay;
+}
+
+.toggle{
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	top: 20%;
+	right: 100px;
+	background: url('menu.png');
+	background-repeat: no-repeat;
+	background-size: 60px;
+	background-position: center;
+	cursor: pointer;
+	z-index: 1000;
+}
+
+@keyframes slide{
+	0% {background-image: url('menu1.png');}
+	30% {background-image: url('menu2.png');}
+	60% {transform: scaleX(-1);
+	}
+	75% {background-image: url('menu1.png');
+		transform: scaleX(-1);
+	}
+}
+
+.toggle:hover{
+	animation-name: slide;
+	animation-duration: 1s;
+	animation-delay: 0.2s;
+}
+
+.toggle.active{
+	background: url('close.png');
+	background-repeat: no-repeat;
+	background-size: 60px;
+	background-position: center;
+	cursor: pointer;
+}
+
+.toggle.active:hover{
+	animation: none;
+}
+
+.menubar{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 300px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--dark);
+}
+
+.menubar ul{
+	position: relative;
+	list-style: none;
+}
+
+.menubar ul li a{
+	text-decoration: none;
+	font-size: 40px;
+	color: var(--light-highlight);
+}
+
+.menubar ul li a:hover{
+	
+	color: var(--dark-highlight);
+}
+
+
+@media(max-width: 797px){
+	.showcase, .showcase header{
+		padding: 40px;
+	}
+
+	.text h2{
+		font-size: 2em;
+	}
+
+	.text h3{
+		font-size: 2em;
+	}
+
+	.text p{
+		font-size: 1em;
+	}
+}
+
+
+@media(max-width: 1000px){
+	.toggle:hover{
+		animation: none;
+	}
+
+}
