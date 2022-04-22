@@ -289,7 +289,6 @@ maybe play around a bit with logo hide as scroll through website.
 }
 
 .toggle:hover{
-	mix-blend-mode: overlay;
 	background-color: var(--bg-light);
 	box-shadow: 0 0 50px var(--light-highlight);
 }
