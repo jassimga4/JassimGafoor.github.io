@@ -254,6 +254,24 @@ maybe play around a bit with logo hide as scroll through website.
 	max-width: 600px;
 }
 
+.text p a:link{
+	color: var(--light-highlight);
+
+	
+}
+
+.text p a:hover{
+	text-shadow: 0 0  20px  var(--light-highlight);
+	color: var(--dark-highlight) !important;
+}
+
+.text p a:visited{
+	color: var(--light-highlight);
+
+	
+}
+
+
 .text a{
 	display: inline-block;
 	font-size: 1em;
